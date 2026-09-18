@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khahlil A. Louisy</title>
+<meta name="description" content="Writing and research by Khahlil A. Louisy on technology, public policy, and urban systems.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FCFCFB;
+    --ink: #171A1F;
+    --muted: #5C6470;
+    --rule: #DFE2E5;
+    --accent: #2E5B8A;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.5;
+    font-optical-sizing: auto;
+  }
+
+  .page {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 6rem;
+  }
+
+  @media (min-width: 60rem) {
+    .page {
+      display: grid;
+      grid-template-columns: 17rem 1fr;
+      gap: 5rem;
+      padding: 5rem 3rem 8rem;
+    }
+  }
+
+  /* ---- Identity column ---- */
+
+  .identity { margin-bottom: 3.5rem; }
+
+  @media (min-width: 60rem) {
+    .identity {
+      margin-bottom: 0;
+      position: sticky;
+      top: 5rem;
+      align-self: start;
+    }
+  }
+
+  .portrait {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 0 1.75rem;
+    background: #EDEFF1;
+    border: 1px solid var(--rule);
+  }
+
+  /* For a circular portrait, add: border-radius: 50%; border: none; */
+
+  .name {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+  }
+
+  .role,
+  .standfirst,
+  .line {
+    margin: 0 0 0.75rem;
+    max-width: 30ch;
+    font-size: 1.02rem;
+    line-height: 1.55;
+  }
+
+  .standfirst { margin-bottom: 1.25rem; }
+
+  .line:last-of-type { margin-bottom: 1.5rem; }
+
+  .contact {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  /* ---- Work list ---- */
+
+  .group { margin-bottom: 3.25rem; }
+
+  .group:last-child { margin-bottom: 0; }
+
+  .group-name {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .items { list-style: none; margin: 0; padding: 0; }
+
+  .item { margin-bottom: 1.4rem; max-width: 54ch; }
+
+  .item:last-child { margin-bottom: 0; }
+
+  .item a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .item a:hover,
+  .item a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .item a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .meta {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+    line-height: 1.45;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="identity">
+    <img class="portrait" src="headshot.jpg" alt="Khahlil A. Louisy">
+    <h1 class="name">Khahlil A. Louisy</h1>
+    <p class="role">Executive Director of the Public Innovation Institute.</p>
+    <p class="standfirst">Applied economist working on technology, public policy, and urban systems.</p>
+    <p class="line">Incoming: MIT Economics.</p>
+    <p class="line">Working on: AI and catastrophic risk, biosecurity, and AI governance in municipal government.</p>
+    <p class="contact">Klouisy [at] MIT [dot] edu</p>
+  </header>
+
+  <div class="work">
+
+    <section class="group">
+      <h2 class="group-name">My work at Harvard University</h2>
+      <ul class="items">
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/ai-infra-public-health">A Framework for Using AI-Enabled Infrastructure Monitoring as a Public Health Intervention</a>
+          <span class="meta">2026</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/residents-algorithms-see-different-problems">When Residents and Algorithms See Different Problems</a>
+          <span class="meta">2026</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/ai-public-works">From Reactive to Preventive: How AI Transforms Public Works</a>
+          <span class="meta">Podcast, 2026</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/rethinking-climate-health-impact-metrics">Rethinking Climate, Health, and Impact Metrics at UNGA 80 and Climate Week NYC</a>
+          <span class="meta">2025</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/build-not-making-public-health-tech-actually-works">Build With, Not For: Making Public Health Tech That Actually Works</a>
+          <span class="meta">2025</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/power-people-transforming-civic-participation-public-health">Power to the People: Transforming Civic Participation for Public Health</a>
+          <span class="meta">2025</span>
+        </li>
+        <!-- TODO: confirm title — inferred from URL slug -->
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/news/2025/06/improving-public-health-decision-making-through-alternative-data-sources-part-two">Improving Public Health Decision-Making Through Alternative Data Sources, Part Two</a>
+          <span class="meta">2025</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/leveraging-multiple-funding-sources-local-public-health-priorities">Leveraging Multiple Funding Sources for Local Public Health Priorities</a>
+          <span class="meta">2025</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/child-brain-development-household-poverty-and-economic-mobility">Child Brain Development, Household Poverty, and Economic Mobility</a>
+          <span class="meta">2024 &middot; reprinted in Poverty Law, Policy, and Practice, 3rd ed., forthcoming 2027</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/why-hyperlocal">Why a Hyperlocal Approach to Environmental Solutions is Important for Equity</a>
+          <span class="meta">2024</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/framework-citizen-driven-data-sharing-urban-policy-making">A Framework for Citizen-Driven Data Sharing in Urban Policy-Making</a>
+          <span class="meta">2024</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/using-data-and-digital-tools-public-health">Using Data and Digital Tools for Public Health</a>
+          <span class="meta">2023</span>
+        </li>
+        <li class="item">
+          <a href="https://datasmart.hks.harvard.edu/cyber-security-issues-connected-devices-data-driven-cities">The Cyber Security Issues of Connected Devices in Data-Driven Cities</a>
+          <span class="meta">2023</span>
+        </li>
+        <li class="item">
+          <a href="https://dash.harvard.edu/entities/publication/35310325-f630-428a-8bac-cd3f76be1194">A Framework for Reducing Place-Based Inequity</a>
+          <span class="meta">2023</span>
+        </li>
+        <li class="item">
+          <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37373562">Public Health, Technology, and Human Rights: Lessons Learned from Digital Contact Tracing</a>
+          <span class="meta">2021 &middot; with Maria Carnovale</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2 class="group-name">Journals and book chapters</h2>
+      <ul class="items">
+        <li class="item">
+          <a href="https://issues.org/public-health-data-louisy/">Preventing the Next Public Health Emergency</a>
+          <span class="meta">Issues in Science and Technology, 2025</span>
+        </li>
+        <li class="item">
+          <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003786429-6/people-speak-urban-policy-ethical-insights-use-ai-qualitative-data-streams-alexander-radunsky-khahlil-louisy-simona-tiribelli">The People Speak! Urban Policy and Ethical Insights from the Use of AI on Qualitative Data Streams</a>
+          <span class="meta">Book chapter, forthcoming 2026 &middot; with Alexander Radunsky and Simona Tiribelli</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2 class="group-name">Preprints and presentations</h2>
+      <ul class="items">
+        <li class="item">
+          <a href="https://apha.confex.com/apha/2025/meetingapp.cgi/Paper/576207">Urban Heat Resilience Through Data-Driven Strategies</a>
+          <span class="meta">American Public Health Association Annual Meeting, 2025</span>
+        </li>
+        <li class="item">
+          <a href="https://arxiv.org/abs/2006.05812">COVID-19 Contact-Tracing Mobile Apps: Evaluation and Assessment for Decision Makers</a>
+          <span class="meta">arXiv, 2020</span>
+        </li>
+        <!-- TODO: confirm title -->
+        <li class="item">
+          <a href="https://arxiv.org/abs/2003.08567">Apps Gone Rogue: Maintaining Personal Privacy in an Epidemic</a>
+          <span class="meta">arXiv, 2020</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2 class="group-name">The Public Innovation Institute</h2>
+      <ul class="items">
+        <li class="item">
+          <a href="https://www.thepii.org/research/post-1784823514011">There Is a Capital Allocation Crisis Behind the Current AI Boom</a>
+        </li>
+        <li class="item">
+          <a href="https://www.thepii.org/research/governance-gap-ai-adoption">The Governance Gap: Why Cities Are Racing Toward AI Adoption Without a Map</a>
+        </li>
+        <li class="item">
+          <a href="https://www.thepii.org/research/stop-talking-start-testing-innovation-sandboxes">Stop Talking, Start Testing: Why Cities Must Establish Innovation Sandboxes Now</a>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+</main>
+</body>
+</html>
